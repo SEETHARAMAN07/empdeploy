@@ -17,7 +17,9 @@ app.use(bodyParser.urlencoded({
     extended:true
 }))
 
-mongoose.connect('mongodb://localhost:27017/Login',{
+//mongodb://localhost:27017/Login
+//mongodb+srv://ram:<db_password>@datas.ekgli.mongodb.net/?retryWrites=true&w=majority&appName=datas
+mongoose.connect('mongodb+srv://ram:ram07@mongodbatlas@datas.ekgli.mongodb.net/?retryWrites=true&w=majority&appName=datas',{
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
